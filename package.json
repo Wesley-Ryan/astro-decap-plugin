@@ -1,0 +1,39 @@
+{
+  "name": "astro-decap-plugin",
+  "version": "0.0.1",
+  "description": "Add Decap CMS’ admin dashboard to your Astro project wth ease.",
+  "repository": "Wesley-Ryan/astro-decap-plugin",
+  "homepage": "https://github.com/Wesley-Ryan/astro-decap-plugin",
+  "author": "Wesley-Ryan",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./cms": "./dist/cms.js",
+    "./identity-widget": "./dist/identity-widget.js",
+    "./vite-plugin-admin-dashboard": "./dist/vite-plugin-admin-dashboard.js",
+    "./admin-dashboard.astro": "./admin-dashboard.astro"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepack": "tsc"
+  },
+  "keywords": [
+    "astro",
+    "decap-cms"
+  ],
+  "dependencies": {
+    "@types/react": "^17.0.50",
+    "decap-cms-app": "^3.0.12",
+    "decap-server": "^3.0.1",
+    "netlify-identity-widget": "^1.9.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "astro": "^1.0.0 || ^2.0.0-beta || ^3.0.0-beta || ^4.0.0-beta"
+  },
+  "devDependencies": {
+    "astro": "^4.2.1"
+  }
+}
